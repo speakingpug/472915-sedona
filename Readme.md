@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sergey Malatov](https://up.htmlacademy.ru/htmlcss/18/user/472915).
-* Наставник: [Лиза Позднякова](https://up.htmlacademy.ru/htmlcss/18/user5608).
+* Наставник: [Лиза Позднякова](https://up.htmlacademy.ru/htmlcss/18/user/5608).
 
 ---
 
