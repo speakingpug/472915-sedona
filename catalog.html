@@ -5,6 +5,7 @@
     <title>Поиск жилья в Седоне</title>
   </head>
   <body>
+   <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -18,7 +19,7 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
        <section class="search-details">          
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                <fieldset>
@@ -34,8 +35,8 @@
 
                       <li class="filter-option">                      
                       <input type="checkbox" name="Wi-Fi"><label>WI-FI</label>                                           
-                      </li>                 
-                   </ul>                
+                      </li>                                     
+                   </ul>                                          
                            
                  <legend>Тип жилья</legend>                 
                    <ul>
@@ -58,62 +59,78 @@
                       <br>
                       <input type="submit" value="Показать">
                </fieldset>
+            </form>
         </section>
 
         <section class="results-sorting">
             <div class="total">
-               Найдено:3 
+              <span>Найдено:3</span> 
             </div>
 
-            <ul class="type-sorting">
-               <li><a href="#">По цене</a></li>
-               <li><a href="#">По типу</a></li>
-               <li><a href="#">По рейтингу</a></li>               
-            </ul>
+            <div class="results-navigation">
+              <ul class="type-sorting">
+                 <li><a href="#">По цене</a></li>
+                 <li><a href="#">По типу</a></li>
+                 <li><a href="#">По рейтингу</a></li>               
+             </ul>
+
+            <div class="results-elevator">
+              <a href="#" title="По возрастанию" class="buttonup"><img src="img/navigation-up.png"></a>
+              <a href="#" title="По убыванию" class="buttonup"><img src="img/navigation-down.png"></a>
+            </div>
         </section>
 
         <section class="results">
             <div class="hotels">
               <h2>Amara resort & spa</h2>
-              <p>Гостиница</p>
-              <p>от 3500 р.</p>
+              <span class="hotel-preis">Гостиница от 3500 р.</span>
               <img src="img/results-amara.png" width="105" height="70" alt="Amara resort & spa">              
               <br> 
 
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">            
               <input type="submit" name="details-btn" value="Подробнее">
               <input type="submit" name="book-btn" value="Забронировать">
+            </form>
             </div>
 
             <div class="hotels">
               <h2>Desert Quail inn</h2>
-              <p>Мотель</p>
-              <p>от 2000 р.</p>
+              <span class="hotel-preis">Мотель от 2000 р.</span>
               <img src="img/results-desert.png" width="105" height="70" alt="Desert Quail inn">              
               <br> 
 
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">             
               <input type="submit" name="details-btn" value="Подробнее">
               <input type="submit" name="book-btn" value="Забронировать">
+            </form>
             </div>
 
             <div class="hotels">
               <h2>Villas at poco diablo</h2>
-              <p>Аппартамены</p>
-              <p>от 4000 р.</p>
+              <span class="hotel-preis">Аппартамены от 4000 р.</span>
               <img src="img/results-poco_diablo.png" width="105" height="70" alt="Villas at poco diablo">              
               <br>
 
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">              
               <input type="submit" name="details-btn" value="Подробнее">
               <input type="submit" name="book-btn" value="Забронировать">
+            </form>
             </div>
         </section> 
 
         <section class="rating">
-            <div class="rated">Рейтинг: 8,5</div>  
-            <div class="rated">Рейтинг: 8,9</div>
-            <div class="rated">Рейтинг: 9,2</div>
+            <div class="rated"><span class="rated-area">Рейтинг: 8,5</span>
+              <img src="assets/svg/star-icon.svg" alt="Количество звёзд отеля" width="15"; height="15"> 
+            </div>
+
+            <div class="rated"><span class="rated-area">Рейтинг: 8,9</span>
+              <img src="assets/svg/star-icon.svg" alt="Количество звёзд отеля" width="15"; height="15"> 
+            </div>
+
+            <div class="rated"><span class="rated-area">Рейтинг: 9,2</span>
+              <img src="assets/svg/star-icon.svg" alt="Количество звёзд отеля" width="15"; height="15"> 
+            </div>
+        </section>
     </main>
 
     <footer class="main-footer">
@@ -130,5 +147,6 @@
             <a class="button" href="https://htmlacademy.ru"><img src="img/footer-studio.png"></a>
          </div>
     </footer>
+   </div>   
   </body>
 </html>  

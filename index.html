@@ -5,6 +5,7 @@
     <title>город Седона</title>
   </head>
   <body>
+   <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -18,27 +19,22 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
        <section class="introduction">
           <h2 class="visually-hidden">Седона</h2>
-          <img src="img/introduction-welcome.png" width="150" height="35" alt="Welcome">
-          <img src="img/introduction-gorgeous.png" width="205" height="25" alt="to the gorgeous">
-          <img src="img/introduction-sedona.png" width="360" height="60" alt="Sedona">
-          <img src="img/introduction-because.png" width="235" height="60" alt="Because the Grand Canyon sucks">
+          <img src="img/introduction-welcome.png" width="940" height="400" alt="Welcome">          
        </section>
        <section class="features">
             <div class="features-head">
-               <h1>Седона - небольшой городок в Аризоне,<br>
-               заслуживающий большего!</h1>
-               <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+               <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+               <span class="secondary-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</span>
             </div>
 
             <div class="features-items">
                <div class="item-title features-blue">
                    <h2>Настоящий городок</h2>
-                   <p>- №1 -</p> <!-- может &ndash; или &mdash; ?-->
-                   <p>Седона - не аттракцион для туристов,<br> 
-                   там течет своя жизнь</p>           
+                   <span class="secondary-text">&#8212 №1 &#8212 Седона - не аттракцион для туристов,
+                   там течет своя жизнь</span>           
                </div>
 
                <div clas="features-items-img features-blue">
@@ -50,22 +46,19 @@
                <div class="item-title features-white">
                    <img src="#">
                    <h2>Жилье</h2>
-                   <p>Рекомендуем пожить в настоящем <br>
-                   мотеле,все как в кино!</p>
+                   <span class="secondary-text">Рекомендуем пожить в настоящем мотеле,все как в кино!</span>
                </div>
 
                <div class="item-title features-white">
                    <img src="#">
                    <h2>Еда</h2>
-                   <p>Всегда заказывайте фирменный бургер,<br>
-                   вы не разочаруетесь!</p>
+                   <span class="secondary-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
                </div>
 
                <div class="item-title features-white">
                    <img src="#">
                    <h2>Сувениры</h2>
-                   <p>Не только китайского, но и местного<br>
-                   производства!</p>
+                   <span class="secondary-text">Не только китайского, но и местного производства!</span>
                </div>
            </div>
 
@@ -76,44 +69,37 @@
            
                <div clas="item-title features-blue">                
                    <h2>Там есть мост дьявола</h2>
-                   <p>- №2 -</p> 
-                   <p>Да, но по нему можно пройти!Если конечно<br>
-                   вы осмелитесь</p>           
+                   <span class="secondary-text">&#8212 №2 &#8212 Да, но по нему можно пройти!Если конечно вы осмелитесь</span>           
                </div>
            </div>
 
            <div class="features-items">
-                <div class="item-title features-grey">
+                <div class="item-title features-gray">
                    <h2>Небольшая площадь</h2>
-                   <p>- №3 -</p> 
-                   <p>Все достопримечательности<br>
-                   находятся очень близко</p>
+                   <span class="secondary-text">&#8212 №3 &#8212 Все достопримечательности находятся очень близко</span>
                 </div>
 
-                <div class="item-title features-grey">
+                <div class="item-title features-gray">
                    <h2>Красивая дорога</h2>
-                   <p>- №4 -</p> 
-                   <p>Ехать в Седону из Лас-Вегаса совсем<br>
-                    не скучно</p>
+                   <span class="secondary-text">&#8212 №4 &#8212  Ехать в Седону из Лас-Вегаса совсем не скучно</span>
                 </div>
 
-                <div class="item-title features-grey">
+                <div class="item-title features-gray">
                    <h2>Мало туристов</h2>
-                   <p>- №5 -</p> 
-                   <p>Большинство едет в Гранд Каньон и<br>
-                   толпится там</p>
+                   <span class="secondary-text">&#8212 №5 &#8212 Большинство едет в Гранд Каньон и толпится там</span>
                 </div>
            </div>
        </section>
 
        <section class="hotel-search">
            <h2>Заинтересовались?</h2>
-           <p> Укажите предполагемые даты поездки,<br>
-            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+           <span class="secondary-text">Укажите предполагемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</span>
 
-           <fieldset>
-               <legend>Поиск гостиницы в Седоне</legend>
-                   <form action="https://echo.htmlacademy.ru" method="post">
+
+           <form action="https://echo.htmlacademy.ru" method="post">
+              <fieldset>
+                 <legend>Поиск гостиницы в Седоне</legend>
+                   
                       <label for="arrival_date">Дата въезда</label>
                       <input type="text" id="arrival_date" name="arrival_date" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" placeholder="В формате дд-мм-гггг" required value="24 апреля 2016">
                       <br>          
@@ -121,9 +107,9 @@
                       <label for="depart-date">Дата выезда</label>
                       <input type="text" name="depart-date" id="depart-date" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" placeholder="В формате дд-мм-гггг" required value="4 июля 2016">
                       <br>
-                      <input type="submit" value="Найти">
-                   </form>
-           </fieldset>
+                      <input type="submit" value="Найти">                   
+              </fieldset>
+           </form>
        </section>
 
        <section class="map">
@@ -141,9 +127,10 @@
            </ul>
          </div>
          <div class="footer-copyright">
-             Website by        
-            <a class="button" href="https://htmlacademy.ru"><img src="img/footer-studio.png"></a>
+             <span class="secondary-text">Website by</span>        
+             <a class="button" href="https://htmlacademy.ru"><img src="img/footer-studio.png"></a>
          </div>
     </footer>
+   </div>
   </body>
 </html>  
