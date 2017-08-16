@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Поиск жилья в Седоне</title>
+      <link href="css/style.css" rel="stylesheet"> 
   </head>
   <body>
    <div class="container">
@@ -12,18 +13,19 @@
           <img src="img/index-logo.svg" width="115" height="55" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photos_and_videos.html">Фото и видео</a></li>
-          <li><a href="state-map">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>          
+          <li><a href="info.html"><img src="img/info.png"></a></li>
+          <li><a href="photos_and_videos.html"><img src="img/photos & videos.png"></a></li>
+          <li><a href="state-map"><img src="img/map.png"></a></li>
+          <li><a href="hotels.html"><img src="img/hotels.png"></a></li>          
         </ul>
       </nav>
     </header>
     <main>
        <section class="search-details">          
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-               <fieldset>
-                 <legend>Инфраструктура</legend>                 
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">             
+               <fieldset>                
+                 <legend>Инфраструктура</legend>
+                  <img src="img/filter-background.png" width="1200" height="562">                 
                    <ul>
                       <li class="filter-option">
                       <input type="checkbox" name="Pool" checked><label>Бассейн</label>                                      
@@ -75,8 +77,8 @@
              </ul>
 
             <div class="results-elevator">
-              <a href="#" title="По возрастанию" class="buttonup"><img src="img/navigation-up.png"></a>
-              <a href="#" title="По убыванию" class="buttonup"><img src="img/navigation-down.png"></a>
+              <a href="#" title="По возрастанию" class="buttonup"><img src="img/icon-up-dir.svg"></a>
+              <a href="#" title="По убыванию" class="buttonup"><img src="img/icon-down-dir.svg"></a>
             </div>
         </section>
 
@@ -84,69 +86,70 @@
             <div class="hotels">
               <h2>Amara resort & spa</h2>
               <span class="hotel-preis">Гостиница от 3500 р.</span>
-              <img src="img/results-amara.png" width="105" height="70" alt="Amara resort & spa">              
+              <img src="img/amara-resort.png" width="135" height="90" alt="Amara resort & spa">              
               <br> 
 
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">            
               <input type="submit" name="details-btn" value="Подробнее">
               <input type="submit" name="book-btn" value="Забронировать">
             </form>
+
+            <div class="rating">
+              <img src="img/star.svg">
+              <span>Рейтинг: 8,5</span>
+            </div>
             </div>
 
             <div class="hotels">
               <h2>Desert Quail inn</h2>
               <span class="hotel-preis">Мотель от 2000 р.</span>
-              <img src="img/results-desert.png" width="105" height="70" alt="Desert Quail inn">              
+              <img src="img/desert-quail.png" width="135" height="90" alt="Desert Quail inn">              
               <br> 
 
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">             
               <input type="submit" name="details-btn" value="Подробнее">
               <input type="submit" name="book-btn" value="Забронировать">
             </form>
+
+            <div class="rating">
+              <img src="img/star.svg">
+              <span>Рейтинг: 8,9</span>
+            </div>
             </div>
 
             <div class="hotels">
               <h2>Villas at poco diablo</h2>
               <span class="hotel-preis">Аппартамены от 4000 р.</span>
-              <img src="img/results-poco_diablo.png" width="105" height="70" alt="Villas at poco diablo">              
+              <img src="img/poco-diablo.png" width="135" height="90" alt="Villas at poco diablo">              
               <br>
 
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">              
               <input type="submit" name="details-btn" value="Подробнее">
               <input type="submit" name="book-btn" value="Забронировать">
             </form>
-            </div>
-        </section> 
 
-        <section class="rating">
-            <div class="rated"><span class="rated-area">Рейтинг: 8,5</span>
-              <img src="assets/svg/star-icon.svg" alt="Количество звёзд отеля" width="15"; height="15"> 
+            <div class="rating">
+              <img src="img/star.svg">
+              <span>Рейтинг: 9,2</span>
             </div>
-
-            <div class="rated"><span class="rated-area">Рейтинг: 8,9</span>
-              <img src="assets/svg/star-icon.svg" alt="Количество звёзд отеля" width="15"; height="15"> 
-            </div>
-
-            <div class="rated"><span class="rated-area">Рейтинг: 9,2</span>
-              <img src="assets/svg/star-icon.svg" alt="Количество звёзд отеля" width="15"; height="15"> 
-            </div>
-        </section>
+          </div>
+        </section>        
     </main>
 
     <footer class="main-footer">
-       <div class="footer-tag">#visitsedona</div>        
+       <div class="footer-tag">#visitsedona</div>
          <div class="footer-social">        
            <ul>
-             <li><a class="social-button" href="#">Twitter</a></li>
-             <li><a class="social-button" href="#">Facebook</a></li>
-             <li><a class="social-button" href="#">Youtube</a></li>
+             <li><a class="social-button" href="#"><img src="img/twitter.svg"></a></li>
+             <li><a class="social-button" href="#"><img src="img/fb.svg"></a></li>
+             <li><a class="social-button" href="#"><img src="img/youtube.svg"></a></li>
            </ul>
          </div>
          <div class="footer-copyright">
-            Website by        
-            <a class="button" href="https://htmlacademy.ru"><img src="img/footer-studio.png"></a>
+             <span class="secondary-text">Website by</span>        
+             <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg"></a>
          </div>
     </footer>
-   </div>   
+   </div>
   </body>
 </html>  
