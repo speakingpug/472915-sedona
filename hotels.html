@@ -10,7 +10,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="115" height="55" alt="Логотип города Седона">
+          <img src="img/logo.svg" width="115" height="55" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html"><img src="img/info.png"></a></li>
@@ -21,11 +21,10 @@
       </nav>
     </header>
     <main>
-       <section class="search-details">          
+       <div class="search-details">          
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">             
                <fieldset>                
-                 <legend>Инфраструктура</legend>
-                  <img src="img/filter-background.png" width="1200" height="562">                 
+                 <legend>Инфраструктура</legend>                                  
                    <ul>
                       <li class="filter-option">
                       <input type="checkbox" name="Pool" checked><label>Бассейн</label>                                      
@@ -38,8 +37,10 @@
                       <li class="filter-option">                      
                       <input type="checkbox" name="Wi-Fi"><label>WI-FI</label>                                           
                       </li>                                     
-                   </ul>                                          
-                           
+                   </ul>
+                </fieldset>                                                          
+                
+                <fieldset>           
                  <legend>Тип жилья</legend>                 
                    <ul>
                       <li class="filter-option">
@@ -53,34 +54,46 @@
                       <li class="filter-option">
                       <input type="checkbox" name="Apartment" checked><label>Аппартаменты</label>                      
                       </li>                 
-                   </ul>                 
-               
-                 <legend>Стоимость в сутки(р)</legend>                                  
-                   <label for="preis-day">Количество дней</label>
-                    0 <input type="range" id="preis-day" name="preis-day" min="0" max="3000" step="1"> 3000
-                      <br>
-                      <input type="submit" value="Показать">
-               </fieldset>
-            </form>
-        </section>
+                   </ul>
+                </fieldset>   
 
-        <section class="results-sorting">
+                <div class="price-filter block">
+                   <h2 class="filter-name">Стоимость в&nbsp;сутки (Р):</h2>
+                      <div class="price-regulator">                          
+                          <label>от <input class="price-input price-input-min" type="text" name="price-from" value="0"></label>
+                          <label>до <input class="price-input price-input-max" type="text" name="price-from2" value="3000"></label>
+                      </div>                      
+                      <div class="field">                          
+                          <button class="field-slider field-slider-min" type="button" tabindex="-1"></button>
+                          <button class="field-slider field-slider-max" type="button" tabindex="-1"></button>
+                      </div>
+                      <div>
+                          <button class="btn" type="submit">Показать</button>
+                      </div> 
+                </div>               
+            </form>
+        </div>
+
+        <div class="results-sorting">
             <div class="total">
-              <span>Найдено:3</span> 
+              <h2>Найдено:3</h2> 
             </div>
 
             <div class="results-navigation">
-              <ul class="type-sorting">
+              <div class="sort">Сортировка:</div>
+               <ul class="type-sorting">
                  <li><a href="#">По цене</a></li>
                  <li><a href="#">По типу</a></li>
                  <li><a href="#">По рейтингу</a></li>               
-             </ul>
+               </ul>
+             </div>
+            </div>
 
             <div class="results-elevator">
               <a href="#" title="По возрастанию" class="buttonup"><img src="img/icon-up-dir.svg"></a>
               <a href="#" title="По убыванию" class="buttonup"><img src="img/icon-down-dir.svg"></a>
             </div>
-        </section>
+        </div>
 
         <section class="results">
             <div class="hotels">

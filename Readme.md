@@ -3,6 +3,7 @@
 * Студент: [Sergey Malatov](https://up.htmlacademy.ru/htmlcss/18/user/472915).
 * Наставник: [Лиза Позднякова](https://up.htmlacademy.ru/htmlcss/18/user/5608).
 
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
