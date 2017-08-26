@@ -156,8 +156,8 @@ a {
   padding-top: 35px;   
 }
 
-.item-title p {
-  margin: 22px auto;
+.item-title .features-blue p  {
+  margin: 22px auto;    
 }
 
 .right .features-items {
@@ -170,18 +170,24 @@ a {
 }
 
 .features-items-img {
-  position: relative;
+  position: relative;  
   height: 256px;
   overflow: hidden;
   background: rgba(0,0,0,.1); 
 }
 
-.features-items-img img {
-  position: absolute;
-  top: 50%;
+
+.features-items-img .features-blue .first-img img {
+  position: relative;    
   max-width: 100%;
-  height: auto;
-                    <-----
+  height: auto; 
+}
+
+.features-items-img .features-blue .second-img img {
+  position: relative;  
+  top: 0%;  
+  max-width: 100%;
+  height: auto;  
 }
 
 .advantages-items {
