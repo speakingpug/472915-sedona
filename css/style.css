@@ -390,7 +390,10 @@ a {
 
 
 .footer-tag {
-  padding-right: 17px 0;	
+  position: relative;
+  padding-right: 17px;
+  top: 20px;
+  right: 350px;	
 }
 
 .footer-tag a {
@@ -414,6 +417,8 @@ a {
 }
 
 .footer-social li {
+  position: relative;
+  bottom: 40px;
   display: inline-block;
   vertical-align: top;
   margin: 6px 3px;
@@ -437,6 +442,9 @@ a {
 .footer-copyright .logo-htmlacademy {
   display: inline-block;
   vertical-align: middle;
+  position: relative;  
+  bottom: 120px;
+  left: 350px;	
 }
 
 .footer-copyright .secondary-text {
@@ -445,6 +453,9 @@ a {
 }
 
 .button-htmlacademy {
+  position: relative; 
+  bottom: 100px;
+  left: 350px;	
   width: 113px;
   height: 39px;
   margin: 4px 8px;
